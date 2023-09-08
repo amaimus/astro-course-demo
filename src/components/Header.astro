@@ -14,12 +14,12 @@ import ClockIcon from "./icons/ClockIcon.astro";
 const { href, title, body } = Astro.props; */
 ---
 
-<header class="py-8 px-4 mx-auto max-w-xl lg:py-16 lf:px-6">
-  <div class="mx-auto text-center mb-8 lg:mb-16">
-    <h2 class="mb-4 text-5xl tracking-tight font-bold text-white">
+<header class="py-8 px-4 mx-auto max-w-xl lg:py-16 lg:px-6">
+  <div class="mx-auto text-center mb-8 lg:mb-8">
+    <a class="text-5xl tracking-tight font-bold text-white" href="/">
       SpaceX Launches 🚀
-    </h2>
-    <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">
+    </a>
+    <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400 ">
       All the information about SpaceX launches
     </p>
   </div>
@@ -28,15 +28,15 @@ const { href, title, body } = Astro.props; */
   <!-- <Counter client:visible transition:persist /> -->
 
   <nav class="flex flex-col items-center justify-between w-full text-center md:flex-row">
-    <HeaderButton class="text-white"href="/">
+    <HeaderButton class="text-white" href="/">
       Last launches
       <RocketIcon slot="before"/>
     </HeaderButton>
-    <HeaderButton class="text-white"href="/oldest">
+    <HeaderButton class="text-white" href="/oldest">
       Oldest launches
       <ClockIcon slot="before"/>
     </HeaderButton>
-    <HeaderButton class="text-white"href="/about">
+    <HeaderButton class="text-white" href="/about">
       About the project
       <QuestionIcon slot="before"/>
     </HeaderButton>
