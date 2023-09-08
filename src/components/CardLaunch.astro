@@ -1,15 +1,17 @@
 ---
 interface Props {
   id: string
-  name: string
+  details: string | null
   img: string
-  success: string
+  success: boolean
   flightNumber: number
-  details: string
 }
 
-const {id, name, img, success, flightNumber, details }= Astro.props
+const {id, img, success, flightNumber, details }= Astro.props
 const successText = success ? 'Success!' : 'Failure'
+const detailsText = details !== null && details?.length > 100
+  ? details.slice(0,100) + '...'
+  : details
 ---
 
 <a 
@@ -31,7 +33,7 @@ const successText = success ? 'Success!' : 'Failure'
     </h2>
 
     <p class="mb-4 font-light text-gray-400">
-      {details?.length > 100 ? details.slice(0,100) + '...': details}
+      {detailsText}
     </p>
   </header>
 </a>
