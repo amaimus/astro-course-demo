@@ -23,8 +23,15 @@ const detailsText = details !== null && details?.length > 100
   </picture>
 
   <header class="p-4 flex-grow">
-    <span class={`text-xs font-semibold mr-2 px-2.5 py-0.5 rounded
-    ${ success ? 'bg-green-200 text-green-900' : 'bg-red-200 text-red-900'}`}>
+    <span
+      class:list={[
+        "text-xs font-semibold mr-2 px-2.5 py-0.5 rounded",
+        {
+          'bg-green-200 text-green-900': success,
+          'bg-red-200 text-red-900': !success,
+        }
+      ]}
+    >
       {successText}
     </span>
 
