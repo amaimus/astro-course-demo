@@ -4,7 +4,7 @@ import HeaderButton from "./HeaderButton.astro";
 import QuestionIcon from "./icons/QuestionIcon.astro";
 import RocketIcon from "./icons/RocketIcon.astro";
 import ClockIcon from "./icons/ClockIcon.astro";
-
+import { Counter } from "./Counter"
 /* interface Props {
 	title: string;
 	body: string;
@@ -23,6 +23,9 @@ const { href, title, body } = Astro.props; */
       All the information about SpaceX launches
     </p>
   </div>
+  <!-- Example of how to use a preact component
+  persisting value between pages -->
+  <Counter client:visible transition:persist />
 
   <nav class="flex flex-col items-center justify-between w-full text-center md:flex-row">
     <HeaderButton class="text-white"href="/">
