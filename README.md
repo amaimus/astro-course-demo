@@ -2,7 +2,7 @@
 
 🟥 **Español**
 
-Creamos una Aplicación con Astro! 🚀 El nuevo framework que está marcando tendencia. Creamos una web que lista de todos los lanzamientos de SpaceX. Renderizamo SSR, página 404 y componentes interactivos (Preact)
+Creamos una Aplicación con Astro! 🚀 El nuevo framework que está marcando tendencia. Creamos una web que lista de todos los lanzamientos de SpaceX. Renderizado SSR, página 404 y componentes interactivos (Preact)
 
 🟦 **English**
 
