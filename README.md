@@ -8,6 +8,6 @@ Creamos una Aplicación con Astro! 🚀 El nuevo framework que está marcando te
 
 We've built a SpaceX launch tracker with Astro, the trendy framework. It offers SSR rendering, a 404 page, and interactive Preact components.
 
-![astro-course-demo](https://github.com/amaimus/astro-course-demo/assets/35699916/d287f0c0-45b6-491e-b10e-a0333f2fbcaa)
+<img src='public/astro-course-demo.png'/>
 
 --- 
